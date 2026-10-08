@@ -4,7 +4,7 @@
 }
 
 :root {
-    font-size: 62.5%;
+    font-size:62.5%;
     --vermelho-SENAI: #e30613;
     --branco-SENAI: #ffffff;
     --preto-SENAI: #000000;
@@ -23,8 +23,8 @@ body {
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
     background-color: var(--vermelho-SENAI);
-
-    h1 {
+    
+    h1{
         font-family: "Neo Sans Bold Italic";
         color: var(--branco-SENAI);
         font-size: 5.5rem;
@@ -44,28 +44,30 @@ body {
         font-size: 2rem;
     }
 }
-
-.detalhes {
-    background-color: var(--branco-SENAI);
-    display: flex;
-    margin-top: 5px;
-    border-radius: 8px;
-    flex-direction: column;
+.evento-original{
+    align-items: center;
     font-family: Arial, Helvetica, sans-serif;
-
-    h3 {
-        font-size: 2.5rem;
-        margin-left: 10px;
-    }
-
-    .especificacoes {
-        font-size: 1.75rem;
-        display: block;
-        align-items: start;
-        margin-left: 10px;
-    }
+    display: flex;
+    text-decoration: none;
 
     a {
-        font-size: 1.5rem;
+        text-decoration:underline;
+        font-size: 3rem;
+        color: var(--preto-SENAI);
+    }
+
+    h3 {
+        font-size: 4rem;
+    }
+
+    img {
+        display: flex;
     }
 }
+
+.nenhum-evento {
+    p {
+        font-size: 2rem;
+        margin-left: 30px;
+    }
+};
