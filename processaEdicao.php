@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__ . "/inicio.php";
+require_once __DIR__ . "/edicao.php";
 
 if($_SERVER['REQUEST_METHOD'] == "POST"){
     $EventoAlterado = $_POST; //Formulário de alteração de evento + ID do evento
