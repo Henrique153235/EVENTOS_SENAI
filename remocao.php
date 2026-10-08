@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Remoção - SENAI Eventos</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="./main.css">
 </head>
 
 <body>
@@ -41,10 +41,12 @@
         $id = $_GET['id'];
         $EventoAtual = $_SESSION['eventos'][$id];
         ?>
-        <h2>Deseja excluir este evento?</h2>
-        <p>
-            <strong><?= $EventoAtual['titulo'] ?></strong>
-        </p>
+            <h2 style="font-size: 3.5rem">Deseja excluir este evento?</h2>
+
+            <p style="font-size: 2.5rem;">
+                <?= $EventoAtual['titulo'] ?>
+            </p>
+        
 
         
     </div>
