@@ -55,25 +55,9 @@ if (isset($_GET['id'])) {
                     <input type="text" name="titulo" id="titulo" placeholder="Insira o título aqui" value="<?= $EventoAtual['titulo'] ?>" required>
                 </div>
                 <br>
-                <div>
-                    <label for="imagem">Imagem (link):</label>
-                    <input type="text" name="imagem" id="imagem" placeholder="Insira o link da imagem aqui" required>
-                </div>
-                <br>
                 <div class="categoria">
-                    <p>Categoria:</p>
-                    <p><small>Categoria anterior: <?= $EventoAtual['categoria'] ?></small></p>
-                    <input type="radio" id="Palestra" name="categoria" value="Palestra" required>
-                    <label for="Palestra">Palestra</label>
-
-                    <input type="radio" id="Oficina" name="categoria" value="Oficina">
-                    <label for="Oficina">Oficina</label>
-
-                    <input type="radio" id="Visita Técnica" name="categoria" value="Visita Técnica">
-                    <label for="Visita Técnica">Visita Técnica</label>
-
-                    <input type="radio" id="Feira" name="categoria" value="Feira">
-                    <label for="Feira">Feira</label>
+                    <label for="titulo">Área: </label>
+                    <input type="text" name="titulo" id="titulo" placeholder="Insira o título aqui" value="<?= $EventoAtual['titulo'] ?>" required>
                 </div>
                 <br>
                 <div>
