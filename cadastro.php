@@ -9,7 +9,7 @@ require_once __DIR__ . "/init.php";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastrar Evento - SENAI Eventos</title>
-    <link rel="stylesheet" href="cadastro.css">
+    <link rel="stylesheet" href="./cadastro.css">
 </head>
 
 <body>
@@ -45,13 +45,13 @@ require_once __DIR__ . "/init.php";
             </div>
             <br>
             <div>
-                <label for="horario">Inicio: </label>
-                <input type="time" name="horario" id="horario" placeholder="00:00" required>
+                <label for="inicio">Inicio: </label>
+                <input type="time" name="inicio" id="inicio" placeholder="00:00" required>
             </div>
             <br>
             <div>
-                <label for="horario">Fim: </label>
-                <input type="time" name="horario" id="horario" placeholder="00:00" required>
+                <label for="fim">Fim: </label>
+                <input type="time" name="fim" id="fim" placeholder="00:00" required>
             </div>
             <br>
             <div>
