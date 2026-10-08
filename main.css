@@ -44,81 +44,7 @@ body {
         font-size: 2rem;
     }
 }
-
-.feed {
-    background-color: rgb(206, 206, 206);
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    padding: 15px;
-    font-size: 1.5rem;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.card-evento {
-    border: solid 2px var(--branco-SENAI);
-    border-radius: 6px;
-    padding: 5px;
-    background-color: var(--branco-SENAI);
-    width: 300px;
-
-    img {
-        width: 100%;
-        height: auto;
-        border-radius: 6px;
-    }
-
-    a {
-        text-decoration: none;
-        color: black;
-    }
-}
-
-.formulario {
-    background-color: var(--branco-SENAI);
-    padding: 5px;
-    border-radius: 8px;
-    padding-left: 20px;
-    justify-items: left;
-    margin-top: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2rem;
-    line-height: auto;
-
-    div {
-        display: flex;
-        flex-direction: column;
-        justify-content: left;
-        width: 30%;
-        margin: auto;
-    }
-
-    .categoria{
-        display: block;
-        p {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 2rem;
-        }
-    }
-
-    .confirmar-cadastro {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        align-items: center;
-
-        button {
-            width: fit-content;
-        }
-    }
-}
-
-ul, p {
-    font-size: 1.5rem;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.evento-original, .detalhes {
+.evento-original{
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
@@ -144,25 +70,4 @@ ul, p {
         font-size: 2rem;
         margin-left: 30px;
     }
-}
-
-.detalhes {
-    background-color: var(--branco-SENAI);
-    font-size: 3rem;
-    display: flex;
-    margin-top: 5px;
-    border-radius: 8px;
-    flex-direction: column;
-    align-content: center;
-    img {
-        width: 50%;
-        border-radius: 8px;
-    }
-    .especificacoes {
-        display: block;
-        align-items: start;
-    }
-    a {
-        font-size: 1.5rem;
-    }
-}
+};
