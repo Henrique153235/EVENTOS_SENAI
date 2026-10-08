@@ -9,7 +9,7 @@ require_once __DIR__ . '/init.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Início - SENAI Eventos</title>
-    <link rel="stylesheet" href="./estilizacoes/inicio.css">
+    <link rel="stylesheet" href="./inicio.css">
 </head>
 
 <body>

@@ -14,7 +14,7 @@ $EventoAtual = $_SESSION['eventos'][$EventoId];
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalhes do Evento - SENAI Eventos</title>
-    <link rel="stylesheet" href="./estilizacoes/detalhes.css">
+    <link rel="stylesheet" href="./detalhes.css">
 </head>
 <body>
     <header class="cabecalho">

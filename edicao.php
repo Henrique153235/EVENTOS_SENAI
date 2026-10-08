@@ -20,7 +20,7 @@ if (isset($_GET['id'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edição - SENAI Eventos</title>
-    <link rel="stylesheet" href="./estilizacoes/edicao.css">
+    <link rel="stylesheet" href="./edicao.css">
 </head>
 
 <body>
