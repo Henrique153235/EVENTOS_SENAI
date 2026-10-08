@@ -48,27 +48,21 @@ body {
     background-color: var(--branco-SENAI);
     padding: 5px;
     border-radius: 8px;
-    padding-left: 20px;
     justify-items: left;
-    margin-top: 15px;
+    margin-top: 25px;
+    width: 50vw;
+    margin: auto;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2rem;
     line-height: auto;
+    
 
     div {
         display: flex;
         flex-direction: column;
         justify-content: left;
-        width: 30%;
+        width: 100%;
         margin: auto;
-    }
-
-    .categoria{
-        display: block;
-        p {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 2rem;
-        }
     }
 
     .confirmar-cadastro {
