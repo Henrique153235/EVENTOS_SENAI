@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Neo Sans Bold Italic";
-    src: url("./fonts/Neo Sans Std Bold Italic.otf") format("otf");
+    src: url("./fonts/Neo\ Sans\ Std\ Bold\ Italic.otf") format("woff2");
 }
 
 :root {
