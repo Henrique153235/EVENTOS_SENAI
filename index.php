@@ -9,10 +9,11 @@ require_once __DIR__ . '/init.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iníio - SENAI Eventos</title>
+    <link rel="stylesheet" href="inicio.css">
 </head>
 
 <body>
-    <header>
+    <header class="cabecalho">
         <div class="logo-slogan">
             <h1>SENAI Eventos</h1>
             <p>Todos os eventos do SENAI em um lugar só</p>
@@ -27,7 +28,7 @@ require_once __DIR__ . '/init.php';
         foreach ($_SESSION['eventos'] as $chave => $valor) {
             print "
             <article class='card-evento'>
-            <p>{$valor['titulo']}</p>
+            <h3>{$valor['titulo']}</h3>
             <p>{$valor['local']}</p>
             <p>{$valor['data']} | {$valor['inicio']} - {$valor['fim']}</p>
             <p><a href='detalhes.php?id={$chave}'>Saiba mais &rarr;</a></p>

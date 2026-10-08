@@ -1,0 +1,71 @@
+@font-face {
+    font-family: "Neo Sans Bold Italic";
+    src: url("./fonts/Neo\ Sans\ Std\ Bold\ Italic.otf") format("woff2");
+}
+
+:root {
+    font-size: 62.5%;
+    --vermelho-SENAI: #e30613;
+    --branco-SENAI: #ffffff;
+    --preto-SENAI: #000000;
+    --cinza-SENAI: #878787;
+
+}
+
+body {
+    background-color: rgb(206, 206, 206);
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    padding: 2px 5px 10px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: var(--vermelho-SENAI);
+
+    h1 {
+        font-family: "Neo Sans Bold Italic";
+        color: var(--branco-SENAI);
+        font-size: 5.5rem;
+    }
+
+    p {
+        font-family: "Neo Sans Bold Italic";
+        color: var(--branco-SENAI);
+        font-size: 2.5rem;
+    }
+
+    a {
+        margin: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        color: var(--branco-SENAI);
+        font-size: 2rem;
+    }
+}
+
+.detalhes {
+    background-color: var(--branco-SENAI);
+    display: flex;
+    margin-top: 5px;
+    border-radius: 8px;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+
+    h3 {
+        font-size: 2.5rem;
+        margin-left: 10px;
+    }
+
+    .especificacoes {
+        font-size: 1.75rem;
+        display: block;
+        align-items: start;
+        margin-left: 10px;
+    }
+
+    a {
+        font-size: 1.5rem;
+    }
+}
