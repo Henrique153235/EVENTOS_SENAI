@@ -35,6 +35,7 @@
         }
         ?>
     </ul>
+    <div class="excluir-evento">
     <?php if (isset($_GET['id'])): ?>
         <?php
         $id = $_GET['id'];
@@ -45,6 +46,9 @@
             <strong><?= $EventoAtual['titulo'] ?></strong>
         </p>
 
+        
+    </div>
+
         <form action="processaRemocao.php" method="POST">
 
             <input type="hidden" name="id" value="<?= $id ?>">
@@ -52,7 +56,7 @@
             <button type="submit">Remover Evento</button>
 
 
-        </form>
+        </form> 
 
         <form action="processaCancelamento.php" method="POST">
             <input type="hidden" name="id" value="<?= $id ?>">
