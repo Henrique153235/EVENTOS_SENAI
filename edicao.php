@@ -76,13 +76,13 @@ if (isset($_GET['id'])) {
                 </div>
                 <br>
                 <div>
-                    <label for="horario">Início do evento: </label>
-                    <input type="time" name="horario" id="horario" placeholder="00:00" value="<?= $EventoAtual['inicio'] ?>" required>
+                    <label for="inicio">Início do evento: </label>
+                    <input type="time" name="inicio" id="inicio" placeholder="00:00" value="<?= $EventoAtual['inicio'] ?>" required>
                 </div>
                 <br>
                 <div>
-                    <label for="horario">Fim do evento: </label>
-                    <input type="time" name="horario" id="horario" placeholder="00:00" value="<?= $EventoAtual['fim'] ?>" required>
+                    <label for="fim">Fim do evento: </label>
+                    <input type="time" name="fim" id="fim" placeholder="00:00" value="<?= $EventoAtual['fim'] ?>" required>
                 </div>
                 <br>
                 <div>
