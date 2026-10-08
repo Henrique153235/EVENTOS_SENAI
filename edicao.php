@@ -30,10 +30,10 @@ if (isset($_GET['id'])) {
             <p>Todos os eventos do SENAI em um lugar só</p>
         </div>
         <div class="navegacao">
-            <!-- <?php /*require_once __DIR__ . "/nav.php" ?> -->
+            <?php require_once __DIR__ . "/nav.php" ?>
         </div>
     </header>
-    <!-- <?php /*require_once __DIR__ . "/nav.php"*/ ?> -->
+    <?php require_once __DIR__ . "/nav.php" ?>
 
     <ul class="evento-original">
         <?php
@@ -55,19 +55,14 @@ if (isset($_GET['id'])) {
                     <input type="text" name="titulo" id="titulo" placeholder="Insira o título aqui" value="<?= $EventoAtual['titulo'] ?>" required>
                 </div>
                 <br>
-                <div class="categoria">
-                    <label for="titulo">Área: </label>
-                    <input type="text" name="titulo" id="titulo" placeholder="Insira o título aqui" value="<?= $EventoAtual['titulo'] ?>" required>
-                </div>
-                <br>
                 <div>
                     <label for="descricao">Descrição: </label>
                     <input type="text" name="descricao" placeholder="Insira descrição aqui" id="descricao" value="<?= $EventoAtual['descricao'] ?>">
                 </div>
                 <br>
-                <div>
-                    <label for="local">Local: </label>
-                    <input type="a" name="local" id="local" placeholder="Insira o endereço aqui (link)" value="<?= $EventoAtual['local'] ?>" required>
+                <div class="categoria">
+                    <label for="titulo">Área: </label>
+                    <input type="text" name="area" id="area" placeholder="Digite a área desejada aqui" value="<?= $EventoAtual['area'] ?>" required>
                 </div>
                 <br>
                 <div>
@@ -76,12 +71,28 @@ if (isset($_GET['id'])) {
                 </div>
                 <br>
                 <div>
-                    <label for="vagas">Quantidade de vagas: </label>
-                    <input type="number" name="vagas" id="vagas" value="<?= $EventoAtual['vagas'] ?>" required>
+                    <label for="local">Local: </label>
+                    <input type="a" name="local" id="local" placeholder="Insira o endereço aqui (link)" value="<?= $EventoAtual['local'] ?>" required>
                 </div>
+                <br>
                 <div>
-                    <label for="horario">Horário do evento: </label>
-                    <input type="time" name="horario" id="horario" placeholder="00:00" value="<?= $EventoAtual['horario'] ?>" required>
+                    <label for="horario">Início do evento: </label>
+                    <input type="time" name="horario" id="horario" placeholder="00:00" value="<?= $EventoAtual['inicio'] ?>" required>
+                </div>
+                <br>
+                <div>
+                    <label for="horario">Fim do evento: </label>
+                    <input type="time" name="horario" id="horario" placeholder="00:00" value="<?= $EventoAtual['fim'] ?>" required>
+                </div>
+                <br>
+                <div>
+                    <label for="vagas">Local do evento: </label>
+                    <input type="text" name="local" id="local" value="<?= $EventoAtual['local'] ?>" required>
+                </div>
+                <br>
+                <div>
+                    <label for="vagas">Responsável pelo evento: </label>
+                    <input type="text" name="responsavel" id="responsavel" value="<?= $EventoAtual['responsavel'] ?>" required>
                 </div>
                 <div class="confirmar-adicao">
                     <button type="submit">Adicionar</button>
