@@ -26,4 +26,4 @@ $EventoAtual = $_SESSION['eventos'][$EventoId];
         </div>
     </header>
 </body>
-</html>l
+</html>
