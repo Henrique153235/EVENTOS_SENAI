@@ -35,15 +35,21 @@
         }
         ?>
     </ul>
+    <div class="excluir-evento">
     <?php if (isset($_GET['id'])): ?>
         <?php
         $id = $_GET['id'];
         $EventoAtual = $_SESSION['eventos'][$id];
         ?>
-        <h2>Deseja excluir este evento?</h2>
-        <p>
-            <strong><?= $EventoAtual['titulo'] ?></strong>
-        </p>
+            <h2 style="font-size: 3.5rem">Deseja excluir este evento?</h2>
+
+            <p style="font-size: 2.5rem;">
+                <?= $EventoAtual['titulo'] ?>
+            </p>
+        
+
+        
+    </div>
 
         <form action="processaRemocao.php" method="POST">
 
@@ -52,7 +58,7 @@
             <button type="submit">Remover Evento</button>
 
 
-        </form>
+        </form> 
 
         <form action="processaCancelamento.php" method="POST">
             <input type="hidden" name="id" value="<?= $id ?>">
